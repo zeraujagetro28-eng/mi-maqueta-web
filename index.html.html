@@ -1,0 +1,116 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende y Emprende Comunitario - Equipo 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Aprende y Emprende</div>
+        <div class="links">
+            <a href="#inicio">Inicio</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#mision">Misión</a>
+            <a href="#metodologia">Metodología</a>
+            <a href="#inscripcion">Inscripción</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>APRENDE Y EMPRENDE COMUNITARIO</h1>
+            <p>Capacitación y Emprendimiento para el Desarrollo Sostenible</p>
+            <a href="#inscripcion" class="btn-main">INSRÍBETE AHORA</a>
+        </div>
+    </header>
+
+    <section id="introduccion" class="section">
+        <h2>Introducción</h2>
+        <p class="texto-informativo">
+            Este sitio web presenta la maqueta diseñada bajo los principios de la metodología <strong>POUR</strong>. 
+            Nuestra finalidad es garantizar la accesibilidad, inclusión y facilidad de uso para todos los usuarios, 
+            difundiendo un modelo de negocio inclusivo y promoviendo el emprendimiento comunitario.
+        </p>
+    </section>
+
+    <section id="mision" class="section bg-light">
+        <h2>Nuestro Objetivo</h2>
+        <div class="contenido-mision">
+            <p>
+                Reflejamos el compromiso de brindar <strong>formación, acompañamiento y apoyo</strong> a personas de 
+                comunidades vulnerables. Buscamos que cada participante pueda desarrollar 
+                emprendimientos sostenibles que fortalezcan su entorno.
+            </p>
+        </div>
+    </section>
+
+    <section id="metodologia" class="section">
+        <h2>Metodología POUR: Diseño Inclusivo</h2>
+        <p>Garantizamos que el acceso a la información sea una herramienta clave para el desarrollo social.</p>
+        
+        <div class="grid-pour">
+            <div class="card">
+                <h3>Perceptible</h3>
+                <p>La información y los componentes de la interfaz se presentan de forma que los usuarios puedan reconocerlos fácilmente.</p>
+            </div>
+            <div class="card">
+                <h3>Operable</h3>
+                <p>Aseguramos que los usuarios puedan navegar por el sitio y utilizar todas sus funciones sin barreras.</p>
+            </div>
+            <div class="card">
+                <h3>Comprensible</h3>
+                <p>Hacemos que la información y el funcionamiento de la interfaz sean claros y fáciles de seguir.</p>
+            </div>
+            <div class="card">
+                <h3>Robusto</h3>
+                <p>El contenido es compatible con una amplia variedad de dispositivos y tecnologías de asistencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripcion" class="section bg-light">
+        <h2>Registro de Participantes</h2>
+        <p>Únete a nuestro programa de capacitación comunitaria.</p>
+        <form class="formulario">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            
+            <label for="interes">Área de interés:</label>
+            <input type="text" id="interes" name="interes" placeholder="Ej. Panadería, Costura, Tecnología">
+            
+            <button type="submit" class="btn-submit" onclick="confirmarRegistro(event)">ENVIAR REGISTRO</button>
+        </form>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h3>Contacto Directo</h3>
+                <p>📧 Email: <a href="mailto:aprendeyemprendecomunitario@gmail.com">aprendeyemprendecomunitario@gmail.com</a> </p>
+                <p>📞 Teléfono: 7717685743 </p>
+            </div>
+            <div class="footer-equipo">
+                <h3>Equipo 8</h3>
+                <ul>
+                    <li>Sara Janet González Reyes</li>
+                    <li>Eliezer Jaret Juárez Ortega</li>
+                    <li>Amelia Sare Hernández Barro</li>
+                    <li>Heverardo Hernández Manuel</li>
+                    <li>Marcela Hernández Vázquez</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2026 Materia: Diseñar para Compartir. Docente: Mtra. Carolina Valero Olmedo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

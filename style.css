@@ -1,0 +1,197 @@
+/* =========================================
+   ESTILOS SEGÚN MAQUETA PROYECTO EQUIPO 8
+   ========================================= */
+
+:root {
+    --azul-oscuro: #2c3e50;    /* Color para Navbar y Footer */
+    --azul-brillante: #007bff; /* Color para botones principales */
+    --dorado-brand: #c58737;   /* Color de acento para el logo y bordes */
+    --gris-claro: #f4f4f4;     /* Color de fondo para secciones */
+}
+
+/* Suaviza el movimiento cuando haces clic en el menú */
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* --- BARRA DE NAVEGACIÓN (PRINCIPIO OPERABLE) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: var(--azul-oscuro);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dorado-brand);
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--dorado-brand);
+}
+
+/* --- SECCIÓN HERO / INICIO --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://revistafortuna.com.mx/wp-content/uploads/2024/05/IMG-20240513-WA0002.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-main {
+    background: var(--azul-brillante);
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-main:hover {
+    background: #0056b3;
+}
+
+/* --- SECCIONES GENERALES --- */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--gris-claro);
+}
+
+/* --- TARJETAS METODOLOGÍA POUR --- */
+.grid-pour {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-top: 6px solid var(--dorado-brand);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* --- FORMULARIO DE INSCRIPCIÓN --- */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formulario label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background: var(--azul-oscuro);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--azul-brillante);
+}
+
+/* --- PIE DE PÁGINA (CONTACTO) --- */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+/* --- RESPONSIVE (MÓVIL) --- */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; }
+    .links { margin-top: 15px; }
+    .links a { margin: 0 10px; }
+    .hero-content h1 { font-size: 2rem; }
+}
+/* Estilo para la lista de integrantes en el Footer */
+.footer-equipo ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-equipo li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    border-left: 3px solid var(--dorado-brand);
+    padding-left: 10px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
